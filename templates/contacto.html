@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{%load static%}
+{% block title %} Contacto {%endblock%}
+{% block content%}
+{% load crispy_forms_tags %}
+<div class="container  py-5 " style="background-color: rgba(225, 215, 205 , 0.65);">
+
+    <div class="row">
+        <div class="col-lg-6 ">
+         
+            <h3>CONTACTO</h3>
+            <h4>Llamanos al <a href="tel:3644105595" alt="_blank">3644308298</a><p></h4>
+            <h4>Correo electrónico <a href="email:cotelaichaco@gmail.com" alt="_blank">cotelaichaco@gmail.com</a><p></h4>
+            <h5>Presidencia Roque Sáenz Peña - Chaco</h5><br>
+            
+            <!-- formulario de contacto -->
+
+            <h4>Déjanos algún comentario</4><br>
+            <form action="/contacto/" method="post">
+                {% csrf_token %}
+             
+                    <table >
+                      {{ form|crispy }}
+
+                    </table>
+                    <input type="submit" value="Enviar">
+              
+            </form>
+            <!-- fin formulario de contacto -->
+        </div>
+        {{ mesages.errror }}
+        <div class="col-lg-6">
+          </div>
+    </div>
+</div>
+{% endblock%}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{%load static%}
+{% block title %} profesionales {%endblock%}
+{% block content %}
+
+<link rel="stylesheets" href="estilos.css">
+
+<div class="container">
+  <div class="py-5 px-5 rounded">
+    <div class="card mb-5 card-section border border-secondary my-4 mt-4" style="max-width: 1075px;">
+      <div class="row g-2 pt-2 mx-2 ">
+          <div class="col-md-2">
+            <img src="{% static "img/amolosperroslogo.jpg"%}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3>profesionales</h3><br> 
+              <h3 class="mt-4 card-title fw-normal">
+                <p>● María Goi.</p>
+                <p>● Marilu Giuggia.</p>
+                <p>● Ana Bogado.</p>
+                <p>● Lorena Gomez</p>
+                <p>● Carla Acosta</p>
+                <p>● Ariel Darocas</p>
+                <p>● Juana Goya.</p>
+                <p>● Marcela Iznardo</p>
+                <p>● Gladis Fernández</p>
+                <p>● Rosana Santos</p>
+                <p>● Laura Avalle</p>
+                <p>● Fabiana Rolhaiser</p>
+                <p>● Susana Sosa</p>
+                </h3>
+               </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>    
+</div> 
+
+
+{% endblock%}
