@@ -1,5 +1,5 @@
 """
-ASGI config for pryectoInfo2022 project.
+ASGI config for ONG-AMO-LOS-PERROS project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pryectoInfo2022.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ONG-AMO-LOS-PERROS.settings.base')
 
 application = get_asgi_application()
