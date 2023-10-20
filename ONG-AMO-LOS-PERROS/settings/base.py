@@ -95,9 +95,9 @@ WSGI_APPLICATION = 'ONG-AMO-LOS-PERROS.wsgi.application'
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'ongamolosperros',
-            'USER': 'root',
-            'PASSWORD': 'root12345',
+            'NAME': 'Your Name DB',
+            'USER': 'Your User',
+            'PASSWORD': 'Your Password',
             'HOST': 'localhost',
             'PORT': '3306',
         }
